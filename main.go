@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	serverAddr = "localhost:8080" // C2服务器地址，根据需要修改
+	serverAddr = "127.0.0.1:8080" // C2服务器地址，根据需要修改
 )
 
 func main() {
