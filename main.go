@@ -74,7 +74,8 @@ func receiveFromServer(conn net.Conn) {
 			continue
 		}
 
-		// 打印服务器消息
+		// 直接打印服务器消息，不进行编码转换
+		// 因为服务器通过DNS协议传输的数据已经是正确的UTF-8编码
 		fmt.Print(msg)
 	}
 }
